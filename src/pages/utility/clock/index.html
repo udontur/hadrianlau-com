@@ -8,74 +8,14 @@ slug: /clock
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Simple dark mode clock" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/webp" href="/asset/icon/favicon-clock.webp" />
+    <link rel="stylesheet" href="./style.css">
     <script defer src="/_vercel/insights/script.js"></script>
     <title>Clock</title>
-    <style>
-        ::-moz-selection {
-            background-color: transparent;
-        }
-
-        :root {
-            color-scheme: dark;
-        }
-
-        ::selection {
-            background-color: transparent;
-        }
-
-        body {
-            height: 100vh;
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-variant-numeric: tabular-nums;
-            background-color: #000000;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            cursor: default;
-        }
-    </style>
 </head>
 
 <body>
-    <script>
-        function get_query_string(name) {
-            const query_string = new URLSearchParams(
-                window.location.search
-            );
-            return query_string.get(name);
-        }
-        function second_true() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, "0");
-            const minutes = now.getMinutes().toString().padStart(2, "0");
-            const seconds = now.getSeconds().toString().padStart(2, "0");
-            document.body.textContent = `${hours}:${minutes}:${seconds}`;
-        }
-        function second_false() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, "0");
-            const minutes = now.getMinutes().toString().padStart(2, "0");
-            document.body.textContent = `${hours}:${minutes}`;
-        }
-        const second = get_query_string("seconds");
-        if (second === "false") {
-            document.body.style.fontSize = "40vw";
-            second_false();
-            setInterval(second_false, 1000);
-        } else {
-            document.body.style.fontSize = "25vw";
-            second_true();
-            setInterval(second_true, 1000);
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

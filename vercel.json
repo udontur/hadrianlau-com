@@ -1,0 +1,25 @@
+{
+    "cleanUrls": true,
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/src/root/index.html"
+        },
+        {
+            "source": "/404.html",
+            "destination": "/src/404-error/404.html"
+        },
+        {
+            "source": "/portfolio",
+            "destination": "/src/pages/portfolio/index.html"
+        },
+        {
+            "source": "/clock",
+            "destination": "/src/pages/utility/clock/index.html"
+        },
+        {
+            "source": "/linktree",
+            "destination": "/src/pages/utility/linktree/index.html"
+        }
+    ]
+}
