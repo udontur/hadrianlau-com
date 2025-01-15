@@ -2,24 +2,24 @@
     "cleanUrls": true,
     "rewrites": [
         {
-            "source": "/",
-            "destination": "/src/root/index.html"
+            "source": "/src/root/index.html",
+            "destination": "/"
         },
         {
-            "source": "/404.html",
-            "destination": "/src/404-error/404.html"
+            "source": "/src/404-error/404.html",
+            "destination": "/404.html"
         },
         {
-            "source": "/portfolio",
-            "destination": "/src/pages/portfolio/index.html"
+            "source": "/src/pages/portfolio/index.html",
+            "destination": "/portfolio"
         },
         {
-            "source": "/clock",
-            "destination": "/src/pages/utility/clock/index.html"
+            "source": "/src/pages/utility/clock/index.html",
+            "destination": "/clock"
         },
         {
-            "source": "/linktree",
-            "destination": "/src/pages/utility/linktree/index.html"
+            "source": "/src/pages/utility/linktree/index.html",
+            "destination": "/linktree"
         }
     ]
 }
