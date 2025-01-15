@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    background-color: #1F2937;
+}
+.header{
+    max-width: 900px;
+    display: flex;
+    margin: 0px;
+    padding: 8px;
+    padding-bottom: 0px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    font-size: 24px;
+    color: #F9FAF8;
+    align-items: center;
+    font-weight: 700;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+a{
+    text-decoration: none;
+    color: #F9FAF8;
+}
+.landing{
+    display: flex;
+    max-width: 900px;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 128px 64px;
+    align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    color: #F9FAF8;
+    max-width: 400px;
+    gap: 16px;
+}
+.big-title{
+    font-size: 48px;
+    font-weight: 900;
+}
+.smol-title{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+.get-started{
+    width: 130px;
+    font-weight: 600;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #3882F6;
+    border: solid;
+    border-color: #3882F6;
+    border-radius: 8px;
+}
+.info{
+    display: flex;
+    max-width: 900px;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 96px 64px;
+    align-items: center;
+    flex-direction: column;
+}
+.card-sel{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.card img{
+    width: 150px;
+    border: solid;
+    border-color: #3882F6;
+    border-radius: 16px;
+    padding: 16px;
+}
+.card div{
+    margin-top: 16px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service{
+    margin-bottom: 64px;
+    font-size: 36px;
+    font-weight: 900;
+}
+.container2{
+    background-color: #e5e7eb;
+}
+.quote{
+    display: flex;
+    max-width: 900px;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 128px 64px;
+}
+.daquote{
+    text-align: left;
+    margin-bottom: 32px;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+}
+.person{
+    text-align: right !important;
+    font-weight: 600;
+    font-size: 20px;
+}
+.action{
+    display: flex;
+    max-width: 900px;
+    justify-content: space-between;
+    margin: 96px auto;
+    align-items: center;
+    padding: 48px;
+    border-radius: 8px;
+    background-color: #3882F6;
+    color: #F9FAF8
+}
+.action button{
+    background-color: #3882F6;
+    border: solid;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border-color: #F9FAF8;
+    border-width: 2px;
+}
+.call2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer{
+    background-color: #1f2937;
+    padding: 32px;
+    color: #F9FAF8;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+:root {
+    color-scheme: dark;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin: 32px;
+    border: solid;
+    padding: 32px;
+    width: 500px;
+    border-radius: 16px;
+}
+.btnList{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.rockBtn, .paperBtn, .scissorsBtn{
+    display: flex;
+    padding: 8px 32px;
+    font-size: 32px;
+    border: solid;
+    border-radius: 8px;
+}
+.resultList{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.humanResult, .computerResult{
+    font-size: 32px;
+}

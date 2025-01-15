@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
+        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff') format('woff'),
+        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff'),
+        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    color-scheme: dark;
+}
+div{
+    cursor: default;
+}
+.high{
+    color: #a1e754
+}
+body {
+    font-family: 'Phantom Sans';
+    font-weight: 400;
+    scroll-behavior: smooth;
+    font-size: 18px;
+    background-color: #202124;
+    color: fff;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.put-something-here-so-it-looks-nicer{
+    background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
+    border-end-end-radius: 16px;
+    border-end-start-radius: 16px;
+    max-width: 1250px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 20px #d9fdb3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px;
+    font-weight: 600;
+    font-size: 32px;
+}
+.idk-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    min-height: 700px;
+}
+@media (width <= 1025px) {
+    .profile-pic{
+        width: 400px !important;
+    }
+    .name{
+        font-size: 96px !important;
+    }
+    .hello{
+        font-size: 24px !important;
+    }
+    .landing{
+        font-size: 16px;
+    }
+}
+@media (width <= 870px) {
+    .landing{
+        justify-content: center !important;
+    }
+}
+@media (width <= 450px) {
+    .landing{
+        justify-content: center !important;
+    }
+    .name{
+        font-size: 72px !important;
+    }
+    .profile-pic{
+        width: 300px !important;
+    }
+}
+.hello {
+    font-size: 48px;
+    margin-left: -2px;
+}
+
+.name {
+    font-size: 128px;
+    margin-top: -16px;
+    margin-left: -8px;
+    font-weight: 700;
+    color: #a1e754;
+    text-shadow: 0px 0px 8px #a1e754;
+}
+.profile-pic {
+    width: 500px;
+    border-radius: 500px;
+    background-color: #3498db;
+    animation: rotate 2s ease-in-out infinite alternate;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.header{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 48px;
+}
+.card-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+br{
+    margin-bottom: 64px;
+}
+
+.card{
+    display: flex;
+    max-width: 768px;
+    background-color: #28292A;
+    padding: 16px;
+    border-radius: 24px;
+    gap: 16px;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    border: solid;
+    border-width: 2px;
+    border-color: transparent;
+}
+@media (width>= 768px) {
+    .card{
+        width: 768px !important;
+    }
+}
+@media(width<=450px){
+    .card{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .card .logo{
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+.card:hover{
+    background-color: #34363A;
+    border: solid;
+    border-width: 2px;
+    border-color: #a1e752;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.card .logo{
+    width: 128px;
+    height: 128px;
+    border-radius: 8px;
+    border: solid;
+    border-width: 2px;
+    border-color: #a1e752;
+}
+.card .title{
+    color: #a1e752;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+.skills-dev{
+    width: fit-content;
+    height: 64px;
+}
+@media (width<=768px){
+    .skills-dev{
+        height: 32px;
+    }
+}
+@media (width<=400px){
+    .skills-dev{
+        height: 24px;
+    }
+}
+.skills-used{
+    width: fit-content;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+.sub{
+    color: #8b8b8b
+}
+.linktree{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.no-under{
+    text-decoration: none !important;
+}
+button{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 16px;
+    border: solid;
+    border-radius: 16px;
+    border-width: 2px;
+    border-color: transparent;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    background-color:#28292A;
+    cursor: pointer;
+    text-decoration: none !important;
+    gap: 16px;
+}
+button:hover{
+    background-color: #34363A;
+    border: solid;
+    border-width: 2px;
+    border-color: #a1e752;
+}
+.home{
+    padding: 8px !important;
+    border-radius: 8px;
+}
+
+.thanks{
+
+    font-size: 24px;
+    margin-bottom: 32px
+}
+a{
+    color: #fff;
+}
+.fun-thanks{
+    color: #000;
+    background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
+}
+ul{
+    list-style: none;
+    margin-left: -32px;
+}
+.big{
+    font-size: 21px;
+}
+b{
+    color: #a1e754
+}
+
+.footer{
+    background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
+    border-start-end-radius: 16px;
+    border-start-start-radius: 16px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 96px;
+    box-shadow: 0px 0px 20px 20px #d9fdb3;
+    text-align: center;
+    padding: 32px 16px;
+}

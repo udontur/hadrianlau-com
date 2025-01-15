@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+:root {
+    color-scheme: dark;
+}
+
+body{
+    font-family: "Barriecito", serif;
+    font-weight: 700;
+    font-size: 64px;
+    font-style: normal;
+    background-color: #202124;
+    color: #ec3750;
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
+.title{
+    margin: 0px;
+}
+.canvas{
+    margin: 0px;
+}
+.block{
+    width: 16px;
+    height: 16px;
+    background-color: #8492a6;
+}
+.line{
+    display: flex;
+}
+.card{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: #f1c40f;
+    padding: 32px;
+    border: solid;
+    border-color: #ff8c37;
+    border-width: 0px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 40px 20px #ff8c37;
+    gap: 32px;
+}
+.clearCanvas{
+    font-weight: 400;
+    font-family: "Barriecito", serif;
+    padding: 8px 145px;
+    border: solid;
+    border-radius: 8px;
+    font-size: 24px;
+    background-color: #f1c40f;
+    color: #ec3750;
+    border-color: #ff8c37;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+}
+.clearCanvas:hover{
+    background-color: #ff8c37;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+}

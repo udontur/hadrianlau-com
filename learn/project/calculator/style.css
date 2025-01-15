@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color-scheme: dark;
+    
+}
+
+body {
+    font-family: "JetBrains Mono", serif;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+    color: white;
+    background-color: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: solid;
+    padding: 16px;
+    border-radius: 24px;
+    width: 472px;
+    box-shadow: 0px 0px 20px 20px white;
+}
+
+.screen {
+    display: flex;
+    height: 100px;
+    border: solid;
+    border-color: white;
+    width: 432px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.listOfButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.buttonLine {
+    display: flex;
+    gap: 16px;
+}
+
+.button {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #202124;
+    border: solid;
+    border-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3a3b3e;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.button:active {
+    background-color: white;
+    transition-duration: 0.05s;
+    color: #202124;
+    transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.footer {
+    font-size: 16px;
+    font-family: "Schibsted Grotesk", serif;
+    font-weight: 400;
+    display: flex;
+    margin-top: 64px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a {
+    color: #a1e754;
+}

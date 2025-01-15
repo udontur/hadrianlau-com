@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: 'Phantom Sans'
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    color: #43291F;
+}
+.bg-g1{
+    background-color: #226F54;
+}
+
+.bg-g2 {
+    background-color: #87C38F;
+}
+
+.bg-w1 {
+    background-color: #F4F0BB;
+}
+
+.bg-w2 {
+    background-color: #e3e0a7;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xmas{
+    display: flex;
+    justify-content: center;
+}
+.header {
+    width: 1400px;
+    padding: 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #226F54;
+    color: white;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-header {
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
+    background-color: #87C38F;
+    padding: 8px 32px;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #DA2C38;
+    font-family: "Playfair Display", serif;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.header-action {
+    background-color: transparent;
+    border: solid;
+    padding: 16px 32px;
+    border-radius: 132px;
+    font-size: 18px;
+    border-color: #DA2C38;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+    margin-right: 48px;
+}
+
+.logo {
+    width: 500px;
+}
+
+.landing {
+    width: 1400px;
+    align-items: center;
+    background-color: #87C38F;
+    display: flex;
+    justify-content: space-between;
+    height: 650px;
+}
+
+.company-title {
+    margin-left: 64px;
+    color: #DA2C38;
+    font-family: "Playfair Display", serif;
+    font-size: 128px;
+    font-weight: 800;
+    margin-bottom: -70px;
+    padding: 0px;
+}
+
+.slogan {
+    margin-left: 64px;
+    font-size: 18px;
+    margin-top: 70px;
+}
+
+.signature {
+    width: 1400px;
+    align-items: center;
+    background-color: #F4F0BB;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 0px;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.cardList {
+    display: flex;
+    justify-content: center;
+    gap: 96px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.subtitle {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.para {
+    text-align: center;
+    color: #43291f98;
+}
+
+.pricing {
+    width: 1400px;
+    background-color: #e3e0a7;
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 192px 64px;
+}
+
+.action {
+    height: 200px;
+    margin: 64px;
+}
+
+.footer {
+    width: 1400px;
+    color: white;
+    margin: 16px;
+    text-align: center;
+}
+
+.idk {
+    color: #87C38F;
+    text-decoration: none;
+    font-size: 96px;
+    width: 200%;
+}
+
+.action {
+    appearance: none;
+    background-color: #DA2C38;
+    border: 2px solid #DA2C38;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.pricing {
+    width: 1400px;
+}
+
+.action:disabled {
+    pointer-events: none;
+}
+
+.da-list {
+    list-style: none;
+}
+
+.action:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.action:active {
+    box-shadow: none;
+    transform: translateY(0);
+}

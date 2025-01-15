@@ -1,0 +1,21 @@
+*{
+    font-family: "Roboto", sans-serif;
+    border-radius: 8px;
+    color-scheme: dark;
+    
+}
+ol{
+    margin: 0px;
+}
+h3{
+    margin: 0px;
+}
+.ingre{
+    background-color: lightblue;
+    padding: 32px;
+    margin: 16px;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
