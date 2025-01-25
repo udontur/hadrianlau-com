@@ -1,4 +1,4 @@
-c(function oneko() {
+(function oneko() {
     const isReducedMotion =
         window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
         window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
