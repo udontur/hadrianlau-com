@@ -1,4 +1,4 @@
-(function oneko() {
+c(function oneko() {
     const isReducedMotion =
         window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
         window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
@@ -94,7 +94,7 @@
         nekoEl.style.top = `${nekoPosY - 16}px`;
         nekoEl.style.zIndex = 2147483647;
 
-        let nekoFile = "/src/homepage/oneko-js/oneko.gif";
+        let nekoFile = "/oneko-js/oneko.gif";
         const curScript = document.currentScript
         if (curScript && curScript.dataset.cat) {
             nekoFile = curScript.dataset.cat
