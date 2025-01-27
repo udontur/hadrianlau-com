@@ -1,8 +1,7 @@
 {
     "cleanUrls": true,
     "rewrites": [
-      { "source": "/index.html", "destination": "/" },
-      { "source": "/calc", "destination": "/learn/project/calculator/index.html" }
+      { "source": "/learn/project/calculator/:path*", "destination": "/calc/:path*" }
     ]
   }
   
