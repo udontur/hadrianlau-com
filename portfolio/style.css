@@ -46,6 +46,7 @@ body {
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
+    color: #fff; 
 }
 .put-something-here-so-it-looks-nicer{
     background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
