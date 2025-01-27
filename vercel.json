@@ -2,7 +2,7 @@
     "cleanUrls": true,
     "rewrites": [
       { "source": "/index.html", "destination": "/" },
-      { "source": "/learn/project/calculator/index.html", "destination": "/calc" }
+      { "source": "/calc", "destination": "/learn/project/calculator/index.html" }
     ]
   }
   
