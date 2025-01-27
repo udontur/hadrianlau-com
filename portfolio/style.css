@@ -1,3 +1,5 @@
+@import url('/normalize.css');
+
 @font-face {
     font-family: 'Phantom Sans';
     src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
