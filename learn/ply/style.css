@@ -1,3 +1,30 @@
-.abc{
-    color: blue;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    cursor: default !important;
+}
+table{
+    border-collapse: collapse;
+    transition: ease-in-out 250ms;
+}
+table:hover{
+    color: #686868;
+    border-color: #000 !important;
+}
+th, td{
+    border: solid;
+    border-width: 2px;;
+    padding: 8px;
+    text-align: center;
+}
+thead{
+    color: #000;
+}
+th{
+    background-color: #e5faff
+}
+tr:hover{
+    background-color: #e5faff;
+    color: #000;
+    border-color: #000;
 }
