@@ -71,6 +71,7 @@ body {
     color: black;
     transition: ease-in-out 200ms;
     cursor: pointer;
+    border-color: white;
 }
 
 .startStop {
