@@ -79,6 +79,7 @@ function switchWorkBreakDisplay(isBreak){
     }
 }
 
+//alarm player module
 function playAlarm(){
     let audio=new Audio("/porodomo/asset/alarm.mp3");
     audio.play();
