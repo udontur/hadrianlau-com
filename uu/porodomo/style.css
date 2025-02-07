@@ -1,0 +1,102 @@
+@import url('/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
+        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff') format('woff'),
+        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff'),
+        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Phantom Sans';
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    font-size: 64px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.control, .workBreakDisplay{
+    display: flex;
+    flex-direction: row;
+    
+}
+.workBreakDisplay div{
+    margin: 16px;
+    padding: 8px 32px;
+    border-radius: 16px;
+    border: solid;
+    border-width: 3px;
+    background-color: black;
+    color: white;
+    transition: ease-in-out 200ms;
+}
+.time{
+    font-size: 256px;
+    font-family: "Azeret Mono";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.control button{
+    margin: 16px;
+    padding: 8px 32px;
+    border-radius: 16px;
+    border: solid;
+    border-width: 3px;
+    background-color: black;
+    color: white;
+    transition: ease-in-out 200ms;
+}
+.control button:hover{
+    background-color: white;
+    color: black;
+    transition: ease-in-out 200ms;
+}
+.startStop{
+    font-size: 64px;
+}
+.time{
+    display: flex;
+}
+.seperator{
+    font-family: serif !important;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restart{
+    /* border-width: 0px !important; */
+}
+.restart:hover{
+    /* background-color: black !important;
+    color: white !important;
+    width: 128px !important;
+    height: 128px !important; */
+}
