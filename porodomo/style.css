@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family: 'Phantom Sans';
     src: url('/asset/fonts/PhantomSans/Regular.woff2') format('woff2');
@@ -7,15 +8,7 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Phantom Sans';
-    src: url('/asset/fonts/PhantomSans/Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-body{
+body {
     font-family: 'Phantom Sans';
     color: white;
     background-color: black;
@@ -29,18 +22,20 @@ body{
     cursor: default !important;
 }
 
-.box{
+.box {
     padding: 8px;
     border-radius: 32px;
 }
 
-.control, .workBreakDisplay{
+.control,
+.workBreakDisplay {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 16px;
 }
-.workBreakDisplay div{
+
+.workBreakDisplay div {
     padding: 8px 32px;
     border-radius: 16px;
     border: solid;
@@ -51,14 +46,16 @@ body{
     flex: 1;
     text-align: center;
 }
-.time{
+
+.time {
     font-size: 256px;
     font-family: "Azeret Mono";
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
-.control button{
+
+.control button {
     padding: 8px 32px;
     border-radius: 16px;
     border: solid;
@@ -68,30 +65,34 @@ body{
     transition: ease-in-out 200ms;
     flex: 1;
 }
-.control button:hover{
+
+.control button:hover {
     background-color: white;
     color: black;
     transition: ease-in-out 200ms;
     cursor: pointer;
 }
 
-.startStop{
+.startStop {
     font-size: 64px;
 }
-.time{
+
+.time {
     display: flex;
 }
-.seperator{
+
+.seperator {
     font-family: serif !important;
     font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.restart{
+
+.restart {
     flex: 0 !important;
-    margin: 0px !important; 
-    padding: 0px!important;
+    margin: 0px !important;
+    padding: 0px !important;
     border: none !important;
     background-color: transparent !important;
     color: white;
@@ -102,30 +103,29 @@ body{
     justify-content: center;
     align-items: center;
 }
-.spinspin{
+
+.spinspin {
     animation: spinspin 1s ease-in-out;
     color: gray;
 }
+
 @keyframes spinspin {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
-.restart:hover{
-    /* background-color: black !important;
-    color: white !important;
-    width: 128px !important;
-    height: 128px !important; */
+.restart:hover {
     cursor: pointer;
     color: white !important;
 }
-.display-active{
+
+.display-active {
     background-color: #90e0ef !important;
     border-color: #90e0ef !important;
     color: black !important;
 }
-
