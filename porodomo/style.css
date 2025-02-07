@@ -1,9 +1,7 @@
-@import url('/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
-        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2');
+    src: url('/asset/fonts/PhantomSans/Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -11,17 +9,7 @@
 
 @font-face {
     font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff') format('woff'),
-        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff'),
-        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2');
+    src: url('/asset/fonts/PhantomSans/Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -29,7 +17,6 @@
 
 body{
     font-family: 'Phantom Sans';
-    font-weight: 400;
     color: white;
     background-color: black;
     font-size: 64px;
@@ -39,15 +26,21 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: default !important;
+}
+
+.box{
+    padding: 8px;
+    border-radius: 32px;
 }
 
 .control, .workBreakDisplay{
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
+    gap: 16px;
 }
 .workBreakDisplay div{
-    margin: 16px;
     padding: 8px 32px;
     border-radius: 16px;
     border: solid;
@@ -55,6 +48,8 @@ body{
     background-color: black;
     color: white;
     transition: ease-in-out 200ms;
+    flex: 1;
+    text-align: center;
 }
 .time{
     font-size: 256px;
@@ -64,7 +59,6 @@ body{
     font-style: normal;
 }
 .control button{
-    margin: 16px;
     padding: 8px 32px;
     border-radius: 16px;
     border: solid;
@@ -72,12 +66,15 @@ body{
     background-color: black;
     color: white;
     transition: ease-in-out 200ms;
+    flex: 1;
 }
 .control button:hover{
     background-color: white;
     color: black;
     transition: ease-in-out 200ms;
+    cursor: pointer;
 }
+
 .startStop{
     font-size: 64px;
 }
@@ -92,11 +89,43 @@ body{
     align-items: center;
 }
 .restart{
-    /* border-width: 0px !important; */
+    flex: 0 !important;
+    margin: 0px !important; 
+    padding: 0px!important;
+    border: none !important;
+    background-color: transparent !important;
+    color: white;
+    transition: ease-in-out 200ms;
+    height: 96px;
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.spinspin{
+    animation: spinspin 1s ease-in-out;
+    color: gray;
+}
+@keyframes spinspin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .restart:hover{
     /* background-color: black !important;
     color: white !important;
     width: 128px !important;
     height: 128px !important; */
+    cursor: pointer;
+    color: white !important;
 }
+.display-active{
+    background-color: #90e0ef !important;
+    border-color: #90e0ef !important;
+    color: black !important;
+}
+

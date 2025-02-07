@@ -1,7 +1,7 @@
 //timer setting
 let offset=1;
-let workTime=3;
-let breakTime=5;
+let workTime=1500;
+let breakTime=300;
 
 //init values
 let time=workTime;
@@ -26,8 +26,9 @@ startStop.addEventListener("click", ()=>{
 function runTimer(){
     if(isEnd()){
         isBreak=!isBreak;
-        if(isBreak) time=breakTime;
+        if(isBreak) time=breakTime+offset;
         else time=workTime;
+        playAlarm();
         switchWorkBreakDisplay(isBreak);
     }
     countDown();
@@ -35,18 +36,20 @@ function runTimer(){
 function countDown(){
     time--;
     setTime(time);
-    
 }
 
 //reset module
 let restart=document.querySelector(".restart");
-restart.addEventListener("click", ()=>{
+restart.addEventListener("click", async ()=>{
     clearInterval(inter);
     if(isBreak) time=breakTime;
     else time=workTime;
     setTime(time);
     isStopped=true;
     startStop.textContent="Start";
+    restart.classList.add("spinspin");
+    await sleep(1000);
+    restart.classList.remove("spinspin");
 });
 
 //time display modifyer
@@ -61,22 +64,24 @@ function setTime(time){
     second.textContent=secondValue.padStart(2, "0");
 }
 
+//switch work break display active color
 let workDisplay=document.querySelector(".work");
 let breakDisplay=document.querySelector(".break");
 function switchWorkBreakDisplay(isBreak){
     if(isBreak===true){
         console.log("Break");
-        breakDisplay.style.backgroundColor="white !important";
-        breakDisplay.style.color="black !important";
-        workDisplay.style.backgroundColor="black !important";
-        workDisplay.style.color="white !important";
+        breakDisplay.classList.add("display-active");
+        workDisplay.classList.remove("display-active");
     }else{
         console.log("Work");
-        workDisplay.style.backgroundColor="white !important";
-        workDisplay.style.color="black !important";
-        breakDisplay.style.backgroundColor="black !important";
-        breakDisplay.style.color="white !important";
+        workDisplay.classList.add("display-active");
+        breakDisplay.classList.remove("display-active");
     }
+}
+
+function playAlarm(){
+    let audio=new Audio("/porodomo/asset/alarm.mp3");
+    audio.play();
 }
 
 //redability functions
@@ -85,4 +90,7 @@ function toggle(value){
 }
 function isEnd(){
     return (time===0);
+}
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
