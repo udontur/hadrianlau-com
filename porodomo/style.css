@@ -12,7 +12,7 @@ body {
     font-family: 'Phantom Sans';
     color: white;
     background-color: black;
-    font-size: 64px;
+    font-size: 48px;
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -36,10 +36,10 @@ body {
 }
 
 .workBreakDisplay div {
-    padding: 8px 32px;
+    padding: 16px 32px;
     border-radius: 16px;
     border: solid;
-    border-width: 3px;
+    border-width: 4px;
     background-color: black;
     color: white;
     transition: ease-in-out 200ms;
@@ -56,10 +56,10 @@ body {
 }
 
 .control button {
-    padding: 8px 32px;
+    padding: 16px 32px;
     border-radius: 16px;
     border: solid;
-    border-width: 3px;
+    border-width: 4px;
     background-color: black;
     color: white;
     transition: ease-in-out 200ms;
@@ -75,7 +75,7 @@ body {
 }
 
 .startStop {
-    font-size: 64px;
+    font-size: 48px;
 }
 
 .time {
