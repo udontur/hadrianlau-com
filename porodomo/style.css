@@ -8,6 +8,18 @@
     font-display: swap;
 }
 
+:-moz-selection {
+    background-color: transparent;
+}
+
+:root {
+    color-scheme: dark;
+}
+
+::selection {
+    background-color: transparent;
+}
+
 body {
     font-family: 'Phantom Sans';
     color: white;
