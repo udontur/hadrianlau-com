@@ -49,7 +49,7 @@ body {
 
 .workBreakDisplay div {
     padding: 16px 32px;
-    border-radius: 16px;
+    border-radius: 32px;
     border: solid;
     border-width: 4px;
     background-color: black;
@@ -69,7 +69,7 @@ body {
 
 .control button {
     padding: 16px 32px;
-    border-radius: 16px;
+    border-radius: 32px;
     border: solid;
     border-width: 4px;
     background-color: black;

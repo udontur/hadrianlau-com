@@ -38,6 +38,7 @@ function runTimer() {
 function countDown() {
     time--;
     setTime(time);
+    setTitle(time);
 }
 
 //reset module
@@ -47,6 +48,7 @@ restart.addEventListener("click", async () => {
     if (isBreak) time = breakTime;
     else time = workTime;
     setTime(time);
+    setTitle(time);
     isStopped = true;
     startStop.textContent = "Start";
     restart.classList.add("spinspin");
@@ -54,16 +56,30 @@ restart.addEventListener("click", async () => {
     restart.classList.remove("spinspin");
 });
 
-//time display modifyer
-let minute = document.querySelector(".minute");
-let second = document.querySelector(".second");
-function setTime(time) {
+//change time to compact format (display)
+function toTimeCompact(time){
     let minuteValue = Math.floor(Number(time / 60));
     minuteValue = minuteValue.toString();
-    minute.textContent = minuteValue.padStart(2, "0");
+    minuteValue = minuteValue.padStart(2, "0");
     let secondValue = Math.floor(Number(time % 60));
     secondValue = secondValue.toString();
-    second.textContent = secondValue.padStart(2, "0");
+    secondValue = secondValue.padStart(2, "0");
+    let titleTime=minuteValue+":"+secondValue;
+    return titleTime;
+}
+
+//title modifyer
+function setTitle(time){
+    let titleTime=toTimeCompact(time);
+    titleTime+=" | Porodomo Timer";
+    document.title=titleTime;
+}
+
+//time display modifyer
+let timeDisplay = document.querySelector(".time");
+function setTime(time) {
+    let titleTime=toTimeCompact(time);
+    timeDisplay.textContent=titleTime;
 }
 
 //switch work break display active color
