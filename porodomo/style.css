@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
-
-@font-face {
-    font-family: 'Phantom Sans';
-    src: url('/asset/fonts/PhantomSans/Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :-moz-selection {
     background-color: transparent;
@@ -20,11 +12,14 @@
     background-color: transparent;
 }
 
+html{
+    font-size: 0.8vw;
+}
+
 body {
-    font-family: 'Phantom Sans';
+    font-family: 'Roboto';
     color: white;
     background-color: black;
-    font-size: 48px;
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -35,8 +30,8 @@ body {
 }
 
 .box {
-    padding: 8px;
-    border-radius: 32px;
+    padding: 1rem;
+    border-radius: 4rem;
 }
 
 .control,
@@ -44,34 +39,38 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
+    gap: 2rem;
 }
 
 .workBreakDisplay div {
-    padding: 16px 32px;
-    border-radius: 32px;
+    padding: 2rem 4rem;
+    border-radius: 4rem;
     border: solid;
-    border-width: 4px;
+    border-width: 0.5rem;
     background-color: black;
     color: white;
     transition: ease-in-out 200ms;
     flex: 1;
     text-align: center;
+    font-size: 6rem;
 }
 
 .time {
-    font-size: 256px;
-    font-family: "Azeret Mono";
-    font-optical-sizing: auto;
-    font-weight: 600;
+    font-size: 32rem;
+    font-family: "Roboto";
+    font-variant-numeric: tabular-nums;
     font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    cursor: default;
 }
 
 .control button {
-    padding: 16px 32px;
-    border-radius: 32px;
+    padding: 2rem 4rem;
+    border-radius: 4rem;
     border: solid;
-    border-width: 4px;
+    border-width: 0.5rem;
     background-color: black;
     color: white;
     transition: ease-in-out 200ms;
@@ -87,7 +86,7 @@ body {
 }
 
 .startStop {
-    font-size: 48px;
+    font-size: 6rem;
 }
 
 .time {
@@ -110,8 +109,8 @@ body {
     background-color: transparent !important;
     color: white;
     transition: ease-in-out 200ms;
-    height: 96px;
-    width: 96px;
+    height: 12rem;
+    width: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
