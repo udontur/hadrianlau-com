@@ -1,9 +1,8 @@
-@import url('/normalize.css');
+@import url('/css/normalize.css');
 
 @font-face {
     font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
-        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2');
+    src: url('/asset/fonts/PhantomSans/Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -11,8 +10,7 @@
 
 @font-face {
     font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff') format('woff'),
-        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2');
+    src: url('/asset/fonts/PhantomSans/Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -20,8 +18,7 @@
 
 @font-face {
     font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff'),
-        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2');
+    src: url('/asset/fonts/PhantomSans/Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -274,53 +271,6 @@ b{
     box-shadow: 0px 0px 20px 20px #d9fdb3;
     padding: 16px;
     text-align: center;
-}
-@import url('/normalize.css');
-
-@font-face {
-    font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Phantom Sans';
-    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-* {
-    color-scheme: dark;
-}
-div{
-    cursor: default;
-}
-.high{
-    color: #a1e754
-}
-body {
-    font-family: 'Phantom Sans';
-    font-weight: 400;
-    scroll-behavior: smooth;
-    font-size: 18px;
-    background-color: #202124;
-    color: fff;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    color: #fff; 
 }
 
 .idk-container{
