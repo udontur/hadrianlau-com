@@ -41,7 +41,7 @@ li{
     margin-bottom: 5px;
 }
 body {
-    font-family: 'Phantom Sans';
+    font-family: 'Phantom Sans', Arial;
     font-weight: 400;
     scroll-behavior: smooth;
     font-size: 18px;
